@@ -258,10 +258,10 @@ export default function Home() {
               Track your food sensitivities and improve your health
             </p>
             <div className="flex justify-center space-x-6 mb-8">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="/terms-of-service" className="text-gray-400 hover:text-white transition-colors">
                 Terms of Service
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
