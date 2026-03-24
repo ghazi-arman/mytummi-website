@@ -34,7 +34,6 @@ export default async function TermsOfServicePage() {
   return (
     <LegalDocumentViewer
       title="Terms of Service"
-      version={doc.version}
       effectiveDate={doc.effective_date}
       contentMarkdown={doc.content_markdown}
     />
