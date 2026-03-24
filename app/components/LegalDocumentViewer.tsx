@@ -4,14 +4,12 @@ import ReactMarkdown from 'react-markdown';
 
 interface LegalDocumentViewerProps {
   title: string;
-  version: string;
   effectiveDate: string;
   contentMarkdown: string;
 }
 
 export default function LegalDocumentViewer({
   title,
-  version,
   effectiveDate,
   contentMarkdown,
 }: LegalDocumentViewerProps) {
@@ -25,9 +23,6 @@ export default function LegalDocumentViewer({
     <main className="min-h-screen bg-white px-4 py-12 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-4xl">
         <h1 className="mb-2 text-4xl font-bold text-gray-900">{title}</h1>
-        <p className="mb-10 text-sm text-gray-600">
-          Last updated: {formattedDate} &nbsp;·&nbsp; Version {version}
-        </p>
 
         <div className="text-gray-700 leading-7">
           <ReactMarkdown

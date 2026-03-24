@@ -34,7 +34,6 @@ export default async function PrivacyPolicyPage() {
   return (
     <LegalDocumentViewer
       title="Privacy Policy"
-      version={doc.version}
       effectiveDate={doc.effective_date}
       contentMarkdown={doc.content_markdown}
     />

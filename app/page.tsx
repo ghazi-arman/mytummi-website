@@ -15,7 +15,7 @@ export default function Home() {
               <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">
                 How It Works
               </a>
-              <a href="#download" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-medium">
+              <a href="#download" className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary-dark transition-colors font-medium">
                 Download
               </a>
             </div>
@@ -29,7 +29,7 @@ export default function Home() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Discover Your Food Sensitivities
-              <span className="block text-blue-600 mt-2">Naturally</span>
+              <span className="block text-primary mt-2">Easily</span>
           </h1>
             <p className="text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed">
               My Tummi helps you identify food sensitivities by connecting what you eat with how your body responds. 
@@ -38,9 +38,9 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
                 href="#download"
-                className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg"
+                className="bg-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-dark transition-all transform hover:scale-105 shadow-lg"
               >
-                Get Started Free
+                Get Started
               </a>
               <a
                 href="#how-it-works"
@@ -68,8 +68,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature 1 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
-              <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-14 h-14 bg-primary-light rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                 </svg>
               </div>
@@ -140,7 +140,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-3">Visual Insights</h3>
               <p className="text-gray-600 leading-relaxed">
-                See your symptom trends over time with beautiful charts. Track your progress and identify improvements.
+                See your symptom trends over time with charts. Track your progress and identify improvements.
               </p>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function Home() {
             <div className="space-y-12">
               {/* Step 1 */}
               <div className="flex flex-col md:flex-row gap-8 items-center">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                <div className="flex-shrink-0 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold">
                   1
                 </div>
                 <div className="flex-1">
@@ -176,7 +176,7 @@ export default function Home() {
 
               {/* Step 2 */}
               <div className="flex flex-col md:flex-row gap-8 items-center">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                <div className="flex-shrink-0 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold">
                   2
                 </div>
                 <div className="flex-1">
@@ -189,7 +189,7 @@ export default function Home() {
 
               {/* Step 3 */}
               <div className="flex flex-col md:flex-row gap-8 items-center">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                <div className="flex-shrink-0 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold">
                   3
                 </div>
                 <div className="flex-1">
@@ -202,7 +202,7 @@ export default function Home() {
 
               {/* Step 4 */}
               <div className="flex flex-col md:flex-row gap-8 items-center">
-                <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                <div className="flex-shrink-0 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold">
                   4
                 </div>
                 <div className="flex-1">
@@ -218,18 +218,18 @@ export default function Home() {
       </section>
 
       {/* Download Section */}
-      <section id="download" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-blue-800">
+      <section id="download" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-primary-dark">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-light mb-10 max-w-2xl mx-auto">
             Download My Tummi today and start your journey to better health. It's free and easy to use.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#"
-              className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg flex items-center gap-3"
+              className="bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg flex items-center gap-3"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.05 20.28c-.98.95-2.05.88-3.08.82-1.05-.06-2.11-.06-3.24-.06v-2.16c.91 0 1.79-.05 2.64-.14 1.35-.1 2.5-.35 3.5-.85 1.25-.62 2.12-1.57 2.12-3.12 0-1.5-.87-2.28-2.12-2.9-1-.5-2.15-.75-3.5-.85-.85-.09-1.73-.14-2.64-.14v-2.16c1.13 0 2.19 0 3.24-.06 1.03-.06 2.1-.13 3.08.82l1.5-1.5c-1.5-1.5-3.5-1.5-5-1.5-1.5 0-3.5 0-5 1.5l1.5 1.5c.98-.95 2.05-.88 3.08-.82 1.05.06 2.11.06 3.24.06v2.16c-.91 0-1.79.05-2.64.14-1.35.1-2.5.35-3.5.85-1.25.62-2.12 1.57-2.12 3.12 0 1.5.87 2.28 2.12 2.9 1 .5 2.15.75 3.5.85.85.09 1.73.14 2.64.14v2.16c-1.13 0-2.19 0-3.24.06-1.03.06-2.1.13-3.08-.82l-1.5 1.5c1.5 1.5 3.5 1.5 5 1.5 1.5 0 3.5 0 5-1.5l-1.5-1.5z"/>
@@ -238,7 +238,7 @@ export default function Home() {
             </a>
             <a
               href="#"
-              className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg flex items-center gap-3"
+              className="bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg flex items-center gap-3"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm4.95-4.95l-2.27-2.27L17.95 2.66l8.49 8.49-2.27 2.27z"/>
@@ -264,7 +264,7 @@ export default function Home() {
               <a href="/terms-of-service" className="text-gray-400 hover:text-white transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:support@mytummi.app" className="text-gray-400 hover:text-white transition-colors">
                 Contact
               </a>
             </div>
