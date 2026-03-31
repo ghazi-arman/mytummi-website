@@ -228,7 +228,9 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="#"
+              href="https://apps.apple.com/us/app/my-tummi/id6761124782"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg flex items-center gap-3"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -236,15 +238,12 @@ export default function Home() {
               </svg>
               Download for iOS
             </a>
-            <a
-              href="#"
-              className="bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg flex items-center gap-3"
-            >
+            <div className="bg-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-3 cursor-default">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm4.95-4.95l-2.27-2.27L17.95 2.66l8.49 8.49-2.27 2.27z"/>
               </svg>
-              Download for Android
-            </a>
+              Coming soon to Android
+            </div>
           </div>
         </div>
       </section>
