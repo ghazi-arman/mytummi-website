@@ -1,29 +1,22 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* @theme inline is required: the --font-* vars are defined by next/font on <body>,
+   not :root, so plain @theme would resolve them to invalid at :root. */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-cream: #fff8f0;
+  --color-peach: #ffedd5;
+  --color-peach-soft: #fff7ed;
+  --color-ink: #431407;
+  --color-ink-soft: #8a5a44;
+  --color-primary: #ea580c;
+  --color-primary-dark: #c2410c;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-primary: #3388c0;
-  --color-primary-dark: #2a6d9e;
-  --color-primary-light: #d6eaf8;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-fraunces);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-geist-sans), sans-serif;
 }
