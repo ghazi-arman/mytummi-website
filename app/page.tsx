@@ -2,7 +2,6 @@ import Nav from "./components/marketing/Nav";
 import Hero from "./components/marketing/Hero";
 import HowItWorks from "./components/marketing/HowItWorks";
 import FeatureSection from "./components/marketing/FeatureSection";
-import Gallery from "./components/marketing/Gallery";
 import DownloadCta from "./components/marketing/DownloadCta";
 import Footer from "./components/marketing/Footer";
 
@@ -37,7 +36,6 @@ export default function Home() {
         imageSide="right"
         tone="cream"
       />
-      <Gallery />
       <DownloadCta />
       <Footer />
     </div>
