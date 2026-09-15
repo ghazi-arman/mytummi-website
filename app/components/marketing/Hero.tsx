@@ -6,7 +6,7 @@ const APP_STORE_URL = "https://apps.apple.com/us/app/my-tummi/id6761124782";
 const FAN: Array<{ src: string; alt: string; className: string; priority?: boolean }> = [
   {
     src: "/screenshots/sensitivity-detail.png",
-    alt: "Sensitivity detail screen showing a likelihood score of 68 out of 100 with a symptom breakdown",
+    alt: "Sensitivity detail screen showing a likelihood score of 62 out of 100 with a symptom breakdown",
     className: "hidden w-56 -rotate-6 md:block",
   },
   {
@@ -17,7 +17,7 @@ const FAN: Array<{ src: string; alt: string; className: string; priority?: boole
   },
   {
     src: "/screenshots/sensitivity-alert.png",
-    alt: "Product scan showing a sensitivity alert for whole milk powder",
+    alt: "Product page showing a sensitivity alert for milk and cream",
     className: "hidden w-56 rotate-6 md:block",
   },
 ];
