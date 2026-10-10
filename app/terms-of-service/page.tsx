@@ -23,9 +23,9 @@ export default async function TermsOfServicePage() {
 
   if (!doc) {
     return (
-      <main className="min-h-screen bg-white px-4 py-12 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl">
-          <p className="text-gray-500">Terms of Service is currently unavailable. Please try again later.</p>
+      <main className="min-h-screen bg-cream px-4 pt-28 pb-16 sm:px-6">
+        <div className="mx-auto max-w-3xl">
+          <p className="text-ink-soft">Terms of Service is currently unavailable. Please try again later.</p>
         </div>
       </main>
     );

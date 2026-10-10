@@ -14,7 +14,7 @@ export default function Home() {
       <FeatureSection
         id="features"
         title="Easy meal logging"
-        body="Log meals your way — search our product database, scan a barcode, or describe your meal in plain text and let AI identify the ingredients. Every food is broken down into 30+ categories like gluten, dairy, and histamine."
+        body="We make logging your meals a breeze! Search our product database, scan a barcode, describe your meal, or take a picture. Every food is broken down into ingredients and categories like gluten, dairy, and histamine to allow our algorithm to find patterns."
         src="/screenshots/quick-meal.png"
         alt="Quick Meal screen identifying ingredients and category tags from a text description"
         imageSide="right"

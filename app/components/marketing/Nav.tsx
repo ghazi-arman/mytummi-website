@@ -4,8 +4,9 @@ export default function Nav() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="#" className="font-display text-2xl font-bold text-ink">My Tummi</a>
         <div className="flex items-center gap-6 sm:gap-8">
-          <a href="#how-it-works" className="hidden text-ink-soft transition-colors hover:text-ink sm:block">How it works</a>
-          <a href="#features" className="hidden text-ink-soft transition-colors hover:text-ink sm:block">Features</a>
+          <a href="/#how-it-works" className="hidden text-ink-soft transition-colors hover:text-ink sm:block">How it works</a>
+          <a href="/#features" className="hidden text-ink-soft transition-colors hover:text-ink sm:block">Features</a>
+          <a href="/blog" className="hidden text-ink-soft transition-colors hover:text-ink sm:block">Blog</a>
           <a href="#download" className="rounded-full bg-primary px-5 py-2 font-medium text-white transition-colors hover:bg-primary-dark">Download</a>
         </div>
       </div>
