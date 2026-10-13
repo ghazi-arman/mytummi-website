@@ -15,20 +15,23 @@ export default function Hero() {
             which foods are your likely triggers.
           </p>
           <div className="mt-8 max-lg:flex max-lg:justify-center">
-            <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block transition-opacity hover:opacity-80"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/app-store-badge.svg"
-                alt="Download on the App Store"
-                width={150}
-                height={50}
-              />
-            </a>
+            <div className="flex flex-col items-center gap-2 lg:items-start">
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block transition-opacity hover:opacity-80"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/app-store-badge.svg"
+                  alt="Download on the App Store"
+                  width={150}
+                  height={50}
+                />
+              </a>
+              <p className="text-xs text-ink-soft">No cost. No subscription. No catch.</p>
+            </div>
           </div>
         </div>
 
