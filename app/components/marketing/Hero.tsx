@@ -1,60 +1,70 @@
-import PhoneFrame from "./PhoneFrame";
+import HeroAnimation from "./HeroAnimation";
 
 const APP_STORE_URL = "https://apps.apple.com/us/app/my-tummi/id6761124782";
 
-// Hero fan, left to right. Center phone should stay at index 1; side phones hide on mobile.
-const FAN: Array<{ src: string; alt: string; className: string; priority?: boolean }> = [
-  {
-    src: "/screenshots/sensitivity-detail.png",
-    alt: "Sensitivity detail screen showing a likelihood score of 62 out of 100 with a symptom breakdown",
-    className: "hidden w-56 -rotate-6 md:block",
-  },
-  {
-    src: "/screenshots/dashboard.png",
-    alt: "My Tummi dashboard showing symptom trends and potential sensitivities",
-    className: "z-10 w-64 sm:w-72",
-    priority: true,
-  },
-  {
-    src: "/screenshots/sensitivity-alert.png",
-    alt: "Product page showing a sensitivity alert for milk and cream",
-    className: "hidden w-56 rotate-6 md:block",
-  },
-];
-
 export default function Hero() {
   return (
-    <section className="overflow-hidden px-4 pt-32 pb-16 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-3xl text-center">
-        <h1 className="font-display text-5xl font-bold leading-tight text-ink sm:text-6xl lg:text-7xl">
-          Finally understand what your gut is telling you
-        </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft sm:text-xl">
-          My Tummi connects what you eat with how you feel. Log your meals and symptoms,
-          and let the patterns reveal your food sensitivities.
-        </p>
-        <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg transition-colors hover:bg-primary-dark"
-          >
-            Download for iOS
-          </a>
-          <a
-            href="#how-it-works"
-            className="rounded-full border-2 border-peach px-8 py-4 text-lg font-semibold text-ink transition-colors hover:border-primary hover:text-primary"
-          >
-            See how it works
-          </a>
+    <section className="overflow-hidden px-4 pt-28 pb-8 sm:px-6 lg:px-8 lg:pt-36">
+      <div className="mx-auto grid max-w-5xl items-start gap-4 lg:items-start lg:gap-8 lg:grid-cols-[1fr_auto_14rem]">
+        <div className="max-w-md pt-6 max-lg:mx-auto max-lg:mb-10 max-lg:max-w-xl max-lg:text-center">
+          <h1 className="font-display text-3xl font-bold leading-tight text-ink sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
+            Finally understand what your gut is telling you
+          </h1>
+          <p className="mt-5 text-base leading-relaxed text-ink-soft sm:text-lg">
+            My Tummi connects what you eat with how you feel. Log your meals and
+            symptoms, and let the patterns reveal your food triggers.
+          </p>
+          <div className="mt-8 max-lg:flex max-lg:justify-center">
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block transition-opacity hover:opacity-80"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/app-store-badge.svg"
+                alt="Download on the App Store"
+                width={150}
+                height={50}
+              />
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div className="mx-auto mt-16 flex max-w-4xl items-end justify-center gap-6">
-        {FAN.map((shot) => (
-          <PhoneFrame key={shot.src} src={shot.src} alt={shot.alt} className={shot.className} priority={shot.priority} />
-        ))}
+        {/* Mobile: circle indicators + active description */}
+        <div
+          id="hero-steps-mobile"
+          className="flex flex-col items-center gap-1 max-lg:order-1 lg:hidden"
+          aria-label="What the animation is showing"
+        >
+          <div className="mobile-dots">
+            <span className="dot" data-step="0">1</span>
+            <span className="dot" data-step="1">2</span>
+            <span className="dot" data-step="2">3</span>
+            <span className="dot" data-step="3">4</span>
+            <span className="dot" data-step="4">5</span>
+          </div>
+          <p id="hero-steps-mobile-title" className="mobile-step-title"></p>
+          <p id="hero-steps-mobile-desc" className="mobile-step-desc"></p>
+        </div>
+
+        <div className="max-lg:order-2 max-lg:flex max-lg:justify-center">
+          <HeroAnimation />
+        </div>
+
+        {/* Desktop: vertical list beside phone */}
+        <ol
+          id="hero-steps"
+          className="hidden flex-col gap-0.5 pt-10 lg:flex max-lg:order-3"
+          aria-label="What the animation is showing"
+        >
+          <li><div className="num">1</div><div><b>Log a meal</b><p className="wd"></p></div></li>
+          <li><div className="num">2</div><div><b>Log your day</b><p className="wd"></p></div></li>
+          <li><div className="num">3</div><div><b>Track symptoms</b><p className="wd"></p></div></li>
+          <li><div className="num">4</div><div><b>See your insights</b><p className="wd"></p></div></li>
+          <li><div className="num">5</div><div><b>Run an experiment</b><p className="wd"></p></div></li>
+        </ol>
       </div>
     </section>
   );

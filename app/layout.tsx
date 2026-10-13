@@ -18,7 +18,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "My Tummi - Track Food Sensitivities & Improve Your Health",
+  title: "My Tummi | Find Out Which Foods Bother You",
   description: "My Tummi helps you identify food sensitivities by connecting what you eat with how your body responds. Log meals, track symptoms, and discover patterns to improve your health.",
 };
 

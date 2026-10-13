@@ -4,7 +4,7 @@ date: "2026-10-10"
 summary: "How My Tummi grew from an idea to what it is now"
 ---
 
-At some point you've probably experienced bloating, indegistion, or nausea at the worst possible time, whether that was during a meeting, before an outing with friends, or even in the middle of a meal. 
+At some point you've probably experienced bloating, indigestion, or nausea at the worst possible time - whether that was during a meeting, before an outing with friends, or even in the middle of a meal. 
 
 
 But for the majority of people these issues aren't frequent or severe enough to consult a dietician or doctor.
@@ -12,7 +12,7 @@ But for the majority of people these issues aren't frequent or severe enough to 
 
 Throughout my life I've dealt with stomach issues that were annoying but manageable so I never prioritized fixing them.
 
-However, there was one month where my bloating and indegistion became so bad I finally caved. I set out to find the easiest way I could get to the root cause of my stomach problems.
+However, there was one month where my bloating and indigestion became so bad I finally caved. I set out to find the easiest way I could get to the root cause of my stomach problems.
 
 ## Where the idea came from
 
@@ -22,7 +22,7 @@ I was already logging the meals I ate in my fitness tracker and appreciated how 
 
 I was also using Yuka to see the additive and nutrition scores of products I eat.
 
-I thought to myself why not create an app that allows me to
+I thought to myself, why not create an app that allows me to
 
 1. Log my meals with ease
 2. Track my calories and macros
@@ -48,9 +48,9 @@ I decided to add a feature where users can describe their meal or just take a pi
 This means logging a meal takes seconds but our system still breaks down the food into the ingredients and categories we need for our analysis.
 
 
-### Finding your sensitivities
+### Finding your triggers
 
-Another major change since the beginning is how we identify.
+Another major change since the beginning is how we identify patterns between what you eat and how you feel.
 
 At first, I was using AI (Claude) to identify patterns between the foods a user ate and any symptoms they have.
 
@@ -64,13 +64,13 @@ I won't bore you with the details of the model here but I’ll cover them in a f
 
 As the first user of My Tummi I was essentially the company's guinea pig.
 
-It took a couple of weeks to identify my first sensitivities (capsaicin and sugar alcohols) but it was worth the time to understand my body.
+It took a couple of weeks to identify my first triggers (capsaicin and sugar alcohols) but it was worth the time to understand my body.
 
-My Tummi not only identifies potential sensitivities but sets up experiments to eliminate and then reintroduce those triggers to see if they are actually causing your symptoms.
+My Tummi not only identifies potential triggers but sets up experiments to eliminate and then reintroduce those triggers to see if they are actually causing your symptoms.
 
 After running an experiment for each it became clear that both capsaicin and sugar alcohols were causing my bloating and indigestion.
 
-Now, I haven’t cut out spicy food completely as I couldn’t live without it. But knowing it might cause a reaction helps me avoid it when it matters, like before a big meeting
+Now, I haven’t cut out spicy food completely as I couldn’t live without it. But knowing it might cause a reaction allows me avoid it when it matters, like before a big meeting
 
 That’s exactly what I set out to do when building My Tummi.
 
