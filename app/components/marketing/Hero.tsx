@@ -8,11 +8,11 @@ export default function Hero() {
       <div className="mx-auto grid max-w-5xl items-start gap-4 lg:items-start lg:gap-8 lg:grid-cols-[1fr_auto_15rem]">
         <div className="max-w-md pt-6 max-lg:mx-auto max-lg:mb-10 max-lg:max-w-xl max-lg:text-center">
           <h1 className="font-display text-3xl font-bold leading-tight text-ink sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
-            Finally understand what your gut is telling you
+            Find the foods behind your symptoms
           </h1>
           <p className="mt-5 text-base leading-relaxed text-ink-soft sm:text-lg">
-            My Tummi connects what you eat with how you feel. Log your meals and
-            symptoms, and let the patterns reveal your food triggers.
+            Log your meals and how you feel. My Tummi spots the patterns and shows
+            which foods are your likely triggers.
           </p>
           <div className="mt-8 max-lg:flex max-lg:justify-center">
             <a
