@@ -5,7 +5,7 @@ const APP_STORE_URL = "https://apps.apple.com/us/app/my-tummi/id6761124782";
 export default function Hero() {
   return (
     <section className="overflow-hidden px-4 pt-28 pb-8 sm:px-6 lg:px-8 lg:pt-36">
-      <div className="mx-auto grid max-w-5xl items-start gap-4 lg:items-start lg:gap-8 lg:grid-cols-[1fr_auto_14rem]">
+      <div className="mx-auto grid max-w-5xl items-start gap-4 lg:items-start lg:gap-8 lg:grid-cols-[1fr_auto_15rem]">
         <div className="max-w-md pt-6 max-lg:mx-auto max-lg:mb-10 max-lg:max-w-xl max-lg:text-center">
           <h1 className="font-display text-3xl font-bold leading-tight text-ink sm:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
             Finally understand what your gut is telling you

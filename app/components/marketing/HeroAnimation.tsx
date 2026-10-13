@@ -96,14 +96,14 @@ const SCOPED_CSS = `
 .hero-anim .aeb.press{background:#f2f6fb;color:#9fb6cc}
 
 #hero-steps{list-style:none;margin:0;padding:0}
-#hero-steps li{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;align-items:start;padding:6px 8px;border-radius:10px;transition:background .35s}
-#hero-steps .num{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:600;border:1.5px solid #e3e8ef;color:#8a5a44;transition:all .35s;font-variant-numeric:tabular-nums}
-#hero-steps b{display:block;font-size:13px;font-weight:600;line-height:24px;color:#8a5a44;transition:color .35s}
-#hero-steps .wd{margin:0;font-size:12px;line-height:1.4;color:#8a5a44;max-height:0;opacity:0;overflow:hidden;transition:max-height .4s ease,opacity .3s ease}
+#hero-steps li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start;padding:8px 10px;border-radius:12px;transition:background .35s}
+#hero-steps .num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:600;border:1.5px solid #e3e8ef;color:#8a5a44;transition:all .35s;font-variant-numeric:tabular-nums}
+#hero-steps b{display:block;font-size:14px;font-weight:600;line-height:28px;color:#8a5a44;transition:color .35s}
+#hero-steps .wd{margin:0;font-size:13px;line-height:1.45;color:#8a5a44;max-height:0;opacity:0;overflow:hidden;transition:max-height .4s ease,opacity .3s ease}
 #hero-steps li.on{background:#fff7ed}
 #hero-steps li.on .num{background:#ea580c;border-color:#ea580c;color:#fff}
 #hero-steps li.on b{color:#431407}
-#hero-steps li.on .wd{max-height:10em;opacity:1;margin-top:1px}
+#hero-steps li.on .wd{max-height:10em;opacity:1;margin-top:2px}
 #hero-steps li.done .num{border-color:#ea580c;color:#ea580c}
 #hero-steps .wd.swap{opacity:0!important;transition:opacity .15s}
 

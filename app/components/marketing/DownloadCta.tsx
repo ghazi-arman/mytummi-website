@@ -13,13 +13,26 @@ export default function DownloadCta() {
             href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg transition-colors hover:bg-primary-dark"
+            className="inline-block transition-opacity hover:opacity-80"
           >
-            Download for iOS
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/app-store-badge.svg"
+              alt="Download on the App Store"
+              className="h-[50px] w-auto"
+            />
           </a>
-          <span className="rounded-full border-2 border-ink/15 px-8 py-4 text-lg font-semibold text-ink-soft">
-            Coming soon to Android
-          </span>
+          <div className="relative inline-block">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/google-play-badge.svg"
+              alt="Get it on Google Play"
+              className="h-[50px] w-auto opacity-40"
+            />
+            <span className="absolute -top-2 -right-3 rounded-full bg-ink/70 px-2 py-0.5 text-[10px] font-semibold text-white">
+              Soon
+            </span>
+          </div>
         </div>
       </div>
     </section>
