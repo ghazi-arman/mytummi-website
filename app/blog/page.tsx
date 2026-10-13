@@ -3,13 +3,15 @@ import { getAllPosts } from "../../lib/blog";
 import Nav from "../components/marketing/Nav";
 import Footer from "../components/marketing/Footer";
 
+export const revalidate = 60; // refresh from Sanity every 60 seconds
+
 export const metadata = {
   title: "Blog - My Tummi",
   description: "Articles about food sensitivities, gut health, and how to use My Tummi to feel better.",
 };
 
-export default function BlogIndex() {
-  const posts = getAllPosts();
+export default async function BlogIndex() {
+  const posts = await getAllPosts();
 
   return (
     <div className="min-h-screen bg-cream">
@@ -25,7 +27,7 @@ export default function BlogIndex() {
             <article key={post.slug} className="py-8 first:pt-0">
               <Link href={`/blog/${post.slug}`} className="group flex flex-col gap-2 sm:flex-row sm:gap-10">
                 <time className="shrink-0 text-sm text-ink-soft pt-1.5 sm:w-28">
-                  {new Date(post.date + "T12:00:00").toLocaleDateString("en-US", {
+                  {new Date(post.date).toLocaleDateString("en-US", {
                     year: "numeric",
                     month: "short",
                     day: "numeric",

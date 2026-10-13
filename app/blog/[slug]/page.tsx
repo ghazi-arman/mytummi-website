@@ -1,8 +1,11 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import ReactMarkdown from "react-markdown";
+import { PortableText } from "@portabletext/react";
 import Link from "next/link";
-import { getAllPosts, getPost } from "../../../lib/blog";
+import { getAllSlugs, getPost } from "../../../lib/blog";
+
+export const revalidate = 60;
+import { urlFor } from "../../../lib/sanity";
 import Nav from "../../components/marketing/Nav";
 import Footer from "../../components/marketing/Footer";
 
@@ -11,12 +14,13 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return getAllPosts().map((p) => ({ slug: p.slug }));
+  const slugs = await getAllSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPost(slug);
+  const post = await getPost(slug);
   if (!post) return {};
   return {
     title: `${post.title} - My Tummi`,
@@ -24,9 +28,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const portableTextComponents = {
+  types: {
+    image: ({ value }: any) => {
+      if (!value?.asset?._ref) return null;
+      return (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={urlFor(value).width(800).url()}
+          alt={value.alt || ""}
+          className="my-6 rounded-lg"
+          loading="lazy"
+        />
+      );
+    },
+  },
+  marks: {
+    link: ({ children, value }: any) => (
+      <a href={value.href} target="_blank" rel="noopener noreferrer">
+        {children}
+      </a>
+    ),
+  },
+};
+
 export default async function BlogPost({ params }: Props) {
   const { slug } = await params;
-  const post = getPost(slug);
+  const post = await getPost(slug);
   if (!post) notFound();
 
   return (
@@ -42,7 +70,7 @@ export default async function BlogPost({ params }: Props) {
 
         <article className="mt-8">
           <time className="text-sm text-ink-soft">
-            {new Date(post.date + "T12:00:00").toLocaleDateString("en-US", {
+            {new Date(post.date).toLocaleDateString("en-US", {
               year: "numeric",
               month: "long",
               day: "numeric",
@@ -53,7 +81,7 @@ export default async function BlogPost({ params }: Props) {
           </h1>
 
           <div className="prose mt-10">
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+            <PortableText value={post.body} components={portableTextComponents} />
           </div>
         </article>
       </main>
