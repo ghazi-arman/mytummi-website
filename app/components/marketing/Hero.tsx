@@ -47,6 +47,7 @@ export default function Hero() {
             <span className="dot" data-step="2">3</span>
             <span className="dot" data-step="3">4</span>
             <span className="dot" data-step="4">5</span>
+            <span className="dot" data-step="5">6</span>
           </div>
           <p id="hero-steps-mobile-title" className="mobile-step-title"></p>
           <p id="hero-steps-mobile-desc" className="mobile-step-desc"></p>
@@ -62,11 +63,12 @@ export default function Hero() {
           className="hidden flex-col gap-0.5 pt-10 lg:flex max-lg:order-3"
           aria-label="What the animation is showing"
         >
-          <li><div className="num">1</div><div><b>Log a meal</b><p className="wd"></p></div></li>
-          <li><div className="num">2</div><div><b>Log your day</b><p className="wd"></p></div></li>
-          <li><div className="num">3</div><div><b>Track symptoms</b><p className="wd"></p></div></li>
-          <li><div className="num">4</div><div><b>See your insights</b><p className="wd"></p></div></li>
+          <li><div className="num">1</div><div><b>Your suspected triggers</b><p className="wd"></p></div></li>
+          <li><div className="num">2</div><div><b>Snap your plate</b><p className="wd"></p></div></li>
+          <li><div className="num">3</div><div><b>Catch up later</b><p className="wd"></p></div></li>
+          <li><div className="num">4</div><div><b>See the proof</b><p className="wd"></p></div></li>
           <li><div className="num">5</div><div><b>Run an experiment</b><p className="wd"></p></div></li>
+          <li><div className="num">6</div><div><b>Know before you eat</b><p className="wd"></p></div></li>
         </ol>
       </div>
     </section>
