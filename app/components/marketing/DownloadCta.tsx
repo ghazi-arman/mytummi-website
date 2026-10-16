@@ -30,7 +30,7 @@ export default function DownloadCta() {
               className="h-[50px] w-auto opacity-40"
             />
             <span className="absolute -top-2 -right-3 rounded-full bg-ink/70 px-2 py-0.5 text-[10px] font-semibold text-white">
-              Soon
+              Coming Soon
             </span>
           </div>
         </div>
