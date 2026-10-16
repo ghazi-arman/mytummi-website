@@ -22,6 +22,17 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "My Tummi | Find Out Which Foods Bother You",
   description: "My Tummi helps you identify food sensitivities by connecting what you eat with how your body responds. Log meals, track symptoms, and discover patterns to improve your health.",
+  openGraph: {
+    title: "My Tummi | Find Out Which Foods Bother You",
+    description: "My Tummi helps you identify food sensitivities by connecting what you eat with how your body responds. Log meals, track symptoms, and discover patterns to improve your health.",
+    images: [{ url: "/og-image.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "My Tummi | Find Out Which Foods Bother You",
+    description: "My Tummi helps you identify food sensitivities by connecting what you eat with how your body responds. Log meals, track symptoms, and discover patterns to improve your health.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
